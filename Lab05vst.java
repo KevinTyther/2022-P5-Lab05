@@ -16,6 +16,16 @@ public class Lab05vst extends Applet
         int y1 = 640;
         int x2 = 990;
         int y2 = 640;
+        int z = 10;
+        int k = 640;
         g.drawRect(10,10,width,height);
+        g.setColor(Color.cyan);
+        for(int x = 0; x < 1000; x+=16)
+        {
+            g.drawLine(x1,y1,x2,y2);
+            x1+=18;
+            y2-=15;
+        }
+
     }
 }
