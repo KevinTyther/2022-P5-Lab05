@@ -19,13 +19,37 @@ public class Lab05vst extends Applet
         int z = 10;
         int k = 640;
         g.drawRect(10,10,width,height);
-        g.setColor(Color.cyan);
-        for(int x = 0; x < 1000; x+=16)
+        for(int x = 0; x < 950; x+=15)
         {
             g.drawLine(x1,y1,x2,y2);
-            x1+=18;
-            y2-=15;
+            x1+=15;
+            y2-=10;
         }
+        x1 = 10;
+        y2 = 640;
+        for(int x = 0;x < 950; x+=15)
+        {
+            g.drawLine(x2,y2,x1,y1);
+            x2-=15;
+            y1-=10;
+        }
+        x2 = 990;
+        y1 = 10;
+        y2 = 10;
+        for (int x = 0; x < 950; x+=15)
+        {
+            g.drawLine(x1,y1,x2,y2);
+            x1+=15;
+            y2+=10;
 
+        }
+        x1 = 10;
+        y2 = 10;
+        for (int x = 0; x < 950; x+=15)
+        {
+            g.drawLine(x2,y2,x1,y1);
+            x2-=15;
+            y1+=10;
+        }
     }
 }
